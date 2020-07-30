@@ -14,7 +14,7 @@ const render = require("./lib/htmlRenderer");
 const employees = [];
 
 // Colect information of the manager
-const manager = () => {
+function manager() {
     inquirer.prompt([{
             type: "text",
             name: "name",
@@ -43,7 +43,7 @@ const manager = () => {
 };
 
 // Check type of member
-const member = () => {
+function member() {
     inquirer.prompt([{
         type: "list",
         name: "member",
@@ -64,7 +64,7 @@ const member = () => {
     });
 };
 
-const intern = () => {
+function intern() {
     inquirer.prompt([{
             type: "text",
             name: "name",
@@ -92,7 +92,7 @@ const intern = () => {
     });
 };
 
-const engineer = () => {
+function engineer() {
     inquirer.prompt([{
             type: "text",
             name: "name",
@@ -120,7 +120,7 @@ const engineer = () => {
     });
 };
 
-const end = () => {
+function end() {
     if (fs.existsSync(OUTPUT_DIR)) {
         fs.writeFileSync(outputPath, render(employees), "utf-8");
     } else {
