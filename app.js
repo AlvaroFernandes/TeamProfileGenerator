@@ -109,7 +109,7 @@ function engineer() {
             message: "Type the engineer e-mail: "
         },
         {
-            type: "number",
+            type: "text",
             name: "engineerGitHub",
             message: "Type the GitHub username of the engineer: "
         },
