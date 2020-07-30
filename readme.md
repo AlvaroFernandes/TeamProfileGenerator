@@ -20,7 +20,7 @@ npm i
 ```
     
 ## Usage:
-
+This is a video how the application works. [video demonstration] (https://drive.google.com/file/d/1MKSrLDt9ThIbZffy9_dlfkg-THJpVF7R/view)
 
 ## License:
 This application runs with a MPL-2.0 license.
