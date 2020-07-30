@@ -55,7 +55,7 @@ const member = () => {
         ]
     }]).then((result) => {
         if (result.member === "Intern") {
-            Intern();
+            intern();
         } else if (result.member === "Engineer") {
             engineer();
         } else if (result.member === "None of the above") {
